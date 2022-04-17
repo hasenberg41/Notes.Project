@@ -5,6 +5,9 @@ using Notes.Domain;
 
 namespace Notes.Persistance
 {
+    /// <summary>
+    /// Контекст главного домена. Одно из реализаций интерфейса INotesDbContext
+    /// </summary>
     public class NotesDbContext : DbContext, INotesDbContext
     {
         public DbSet<Note> Notes { get; set; }

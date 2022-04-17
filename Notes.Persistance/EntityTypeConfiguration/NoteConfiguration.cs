@@ -4,6 +4,9 @@ using Notes.Domain;
 
 namespace Notes.Persistance.EntityTypeConfiguration
 {
+    /// <summary>
+    /// Конфигурационный класс главного домена
+    /// </summary>
     public class NoteConfiguration : IEntityTypeConfiguration<Note>
     {
         public void Configure(EntityTypeBuilder<Note> builder)
